@@ -1,9 +1,12 @@
 import React from 'react';
+import Header from './pages/Header';
 
 const App = () => {
     return (
         <>
-            <h1>Hello World</h1>
+            <div className='min-h-[100vh]'>
+                <Header />
+            </div>
         </>
     )
 }
