@@ -1,3 +1,166 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    scroll-behavior: smooth;
+}
+
+.nameT{
+    font-family: 'Lalezar', cursive;
+}
+
+.tittleT{
+    font-family: 'Righteous', cursive;
+}
+
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+}
+.animate-bounce {
+    animation: bounce 1s infinite;
+}
+
+
+@keyframes headerTit {
+    0% {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: none;
+        opacity: 1;
+        position: relative;
+        left: 0%;
+        transform: translateX(0%);
+    }
+}
+
+.headerTitle{
+    animation: headerTit 1s cubic-bezier(.6,-0.28,.74,.05) forwards;
+}
+
+@keyframes headerCenterTBack {
+    0% {
+        transform: none;
+        opacity: 1;
+        position: relative;
+        left: 0%;
+        transform: translateX(0%);
+    }
+
+    100% {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.headderCenterTitle{
+    animation: headerCenterTBack 1s cubic-bezier(.6,-0.28,.74,.05) forwards;
+}
+
+.headerFinalCenterFirst{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+@keyframes headerNav {
+    0% {
+        opacity: 0.0;
+    }
+
+    30% {
+        transform: rotate(5deg)
+    }
+
+    50%{
+        transform: rotate(-5deg)
+    }
+
+    80%{
+        transform: rotate(0deg)
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.headerNavigation{
+    position: absolute;
+    right: 0;
+    transform: translateX(0);
+    animation: headerNav 0.5s ease-in forwards;
+}
+
+
+@keyframes headerNavHide {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.0;
+    }
+}
+
+
+.headerNavigationHide{
+    position: absolute;
+    right: 0;
+    transform: translateX(0);
+    animation: headerNavHide 0.3s ease-in-out forwards;
+}
+
+
+@keyframes AniProjectOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 0.0;
+        transform: translateY(10%);
+    }
+}
+
+
+.projectOut{
+    animation: AniProjectOut 0.3s ease-in-out forwards;
+}
+
+@keyframes AniProjectIn {
+    0% {
+        opacity: 0.0;
+        transform: translateY(10%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+
+.projectIn{
+    animation: AniProjectIn 0.3s ease-in-out forwards;
+}
