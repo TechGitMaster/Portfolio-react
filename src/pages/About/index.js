@@ -35,7 +35,7 @@ const About = () => {
                         </div>
                         <div className='flex flex-wrap md:mt-0 mt-5'>
                         {
-                            TechStack.map((a, i) => <img src={a} alt='stack' className='h-[30px] my-3' style={{ marginRight: i+1 < TechStack.length ? '35px':'0px'  }} />)
+                            TechStack.map((a, i) => <img src={a} alt='stack' className='md:h-[35px] h-[30px] my-3' style={{ marginRight: i+1 < TechStack.length ? '35px':'0px'  }} />)
                         }
                         </div>
                     </div>
