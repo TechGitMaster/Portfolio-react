@@ -10,7 +10,7 @@ const About = () => {
             <div className='md:mt-[90px] mt-[170px] mx-auto pb-[100px] max-w-[1000px] px-3'>
                 <div className='md:flex'>
                     <div className='md:w-[55%]'>
-                        <img src={ Picture2 } alt='pict2' className='md:w-[95%]' />
+                        <img src={ Picture2 } alt='pict2' className='md:mt-0 mt-[50px] md:w-[95%]' />
                     </div>
                     <div className='md:w-[45%]'>
                         <div className='flex items-center md:my-0 my-4'>
