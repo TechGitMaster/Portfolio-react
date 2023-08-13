@@ -26,7 +26,7 @@ const FrontPage = ({ clickNavi, forExplore, setIconLink }) => {
 
     return (
         <>  
-            <div className='mx-auto max-w-[1000px] md:pt-[100px] md:pb-[100px] pt-[70px] md:mb-0 mb-[100px] md:px-0 px-3 flex md:items-center relative' style={{ height: '100vh' }}>
+            <div className='mx-auto max-w-[1000px] md:pt-[100px] pb-[100px] pt-[70px] md:mb-0 mb-[100px] md:px-0 px-3 flex md:items-center relative' style={{ height: '100vh' }}>
                 <div ref={ refDiv } className='bg-black absolute top-0'></div>
                 <div>
                     <div className='md:flex'>
