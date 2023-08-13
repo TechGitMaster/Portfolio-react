@@ -26,8 +26,7 @@ import Github2 from '../Images/PNG/github 2.png';
 import ScaleUp from '../Images/PNG/scaleup.png';
 import Map from '../Images/PNG/map.png';
 import Mail from '../Images/PNG/mail.png';
-
-import TradingCrypto from '../Images/PNG/tradingCrpyto1.png';
+import Burger from '../Images/PNG/burger.png';
 
 export {
     Github,
@@ -58,6 +57,5 @@ export {
     ScaleUp,
     Mail,
     Map,
-
-    TradingCrypto
+    Burger
 }

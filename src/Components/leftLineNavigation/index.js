@@ -6,8 +6,8 @@ const LeftLineNavigation = () => {
         <>
             <div className="px-[15px]">
                 {
-                    [LinkIn, Github, Facebook].map((a, i) => 
-                        <img src={ a } alt='loc' className='cursor-pointer h-[33px] mb-[25px]' />
+                    [Github, Facebook].map((a, i) => 
+                        <img src={ a } alt='loc' className='cursor-pointer h-[37px] mb-[25px]' />
                     )
                 }
             </div>

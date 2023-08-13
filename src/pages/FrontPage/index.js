@@ -35,7 +35,7 @@ const FrontPage = ({ clickNavi, forExplore, setIconLink }) => {
                             <p className=' text-[16px] pt-3 pb-5'>Hi I'm Kyle Matthew S. Velarde A passionate Web Developer from the Philippines</p>
                             <div ref={refIcon} className='flex'>
                                 {
-                                    [LinkIn, Github, Facebook].map((a, i) => 
+                                    [Github, Facebook].map((a, i) => 
                                         <img src={ a } alt='loc' className='cursor-pointer h-[30px] mr-[16px]' />
                                     )
                                 }
