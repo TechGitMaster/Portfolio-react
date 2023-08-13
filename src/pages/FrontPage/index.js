@@ -66,7 +66,7 @@ const FrontPage = ({ clickNavi, forExplore, setIconLink }) => {
                     </div>
                     {
                         forExplore === 0 ?
-                        <div className='w-full absolute md:bottom-[1%] -bottom-[12%] right-0 flex justify-center '>
+                        <div className='w-full md:absolute md:bottom-[1%] right-0 flex justify-center '>
                             <div onClick={ () => clickNavi(1) } className='cursor-pointer'>
                                 <p className='font-bold md:text-[18px] text-[16px] mb-2'>Click to Explore</p>
                                 <div className='flex justify-center'>
