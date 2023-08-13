@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# My Portfolio
+
+![image](https://github.com/TechGitMaster/Portfolio-react/assets/52535645/3ec20f27-b249-4996-bb22-abc28e6747f0)
+![image](https://github.com/TechGitMaster/Portfolio-react/assets/52535645/f06c75d2-998e-4153-97c1-24af6d6c30c5)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
