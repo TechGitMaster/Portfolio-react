@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Angular, ReactJs, Javascript, Android, Github2, ScaleUp } from '../../utilities/PNG';
 import { TradingCrypto, DemonSlayer, HotelReservation, Kobayashi, Pacman, Thesisary, Augmented, NCOVID } from '../../utilities/SProject';
 
-const Projects = () => {
+const Projects = ({ windowSize }) => {
     const [iconSelected, setIconSelected] = useState(0);
     const iconStack = [[Angular, 'Angular'], [ReactJs, 'React'], [Javascript, 'Javascript'], [Android, 'Android App']];
     const [animate, setAnimate] = useState(true);
@@ -55,19 +55,19 @@ const Projects = () => {
 
     return (
         <>
-            <div className={`mx-auto max-w-[1000px] mt-[100px] pb-[100px] overflow-hidden`}>
-                <p className='text-[#2A47E3] text-[20px] tittleT'>Projects</p>
-                <p className='text-[#241F1F] text-[25px] font-bold'>Each project is a quality peace of development</p>
+            <div className={`mx-auto max-w-[1000px] md:mt-[100px] mt-[50px] pb-[100px] overflow-hidden px-3`}>
+                <p className='text-[#2A47E3] md:text-[20px] text-[18px] tittleT'>Projects</p>
+                <p className='text-[#241F1F] md:text-[25px] text-[20px] font-bold'>Each project is a quality peace of development</p>
 
-                <div className='mt-8 flex flex-wrap'>
+                <div className='mt-5 flex flex-wrap'>
                     {
                         iconStack.map((a, i) => 
                         <div onClick={ () => selectedStack(i) } 
-                        className='flex items-center cursor-pointer rounded-[12px] py-2 px-[20px]' 
+                        className='flex items-center cursor-pointer rounded-[12px] py-2 mt-3 px-[20px]' 
                         style={{ background: iconSelected === i ? '#FFCDBE': 'none'}}>
 
                             <img src={ a[0] } alt='con' className='h-[30px] mr-2' />
-                            <p className='text-[15px] font-bold'>{ a[1] }</p>
+                            <p className='md:text-[15px] text-[14px] font-bold'>{ a[1] }</p>
 
                         </div>)
 
@@ -76,6 +76,7 @@ const Projects = () => {
 
                 <div className={`mx-auto max-w-[900px] ${ !animate ? 'projectOut':'projectIn' }`}>
                     {
+                        windowSize > 766 ?
                         projectArr[iconSelected].map((a, i)=> 
                             i % 2 === 0 ? 
                             <div className='flex items-center mt-[100px]'>
@@ -136,6 +137,34 @@ const Projects = () => {
                                 </div>
                             </div>
                         )
+                        :
+                        projectArr[iconSelected].map((a, i) => 
+                        <div className='mt-[60px]'>
+                            <div>
+                                <div className='bg-cover bg-center h-[300px] rounded-[20px]' style={{ backgroundImage: `url('${a[0]}')` }}></div>
+                            </div>
+                            <div>
+                                <p className='font-bold text-[18px] mt-[15px]'>{ a[1] }</p>
+                                <p className='text-[14px] mt-5'>{ a[2] }</p>
+                                    <div className='flex justify-center py-[30px]'>
+                                    {
+                                        a[3].map((b,i) => <p className='font-bold text-[15px]' style={{ marginRight: i < a[3].length-1 ? '15px':'0px' }}>{b}</p>)
+                                    }
+                                </div>
+                                <div className='flex justify-center'>
+                                
+                                    {
+                                        a[4].map((b, i) => 
+                                    
+                                        <div onClick={ () => openProjects(b[2]) } className='flex items-center cursor-pointer' style={{ marginRight: i < a[4].length-1 ? '30px':'0px'}}>
+                                            <p className='font-bold text-[15px] mr-2'>{ b[0] }</p>
+                                            <img src={ b[1] } alt='icon' className='h-[32px]' />
+                                        </div>
+                                        )
+                                    }
+                                </div>
+                            </div>
+                        </div>)
                     }
                 </div>
             </div>

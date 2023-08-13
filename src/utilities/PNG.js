@@ -1,4 +1,5 @@
 import Github from '../Images/PNG/github-sign 2.png';
+import GithubW from '../Images/PNG/githubW.png';
 import LinkIn from '../Images/PNG/linkedin 3.png';
 import Facebook from '../Images/PNG/facebook 3.png';
 import Html from '../Images/PNG/html-5 2.png';
@@ -30,6 +31,7 @@ import Burger from '../Images/PNG/burger.png';
 
 export {
     Github,
+    GithubW,
     LinkIn,
     Facebook,
     Html,

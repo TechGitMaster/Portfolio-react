@@ -1,8 +1,10 @@
 import React from 'react';
 
-const LineSide = () => {
+const LineSide = ({ windowSize }) => {
     return (
         <>
+        {
+            windowSize > 766 ? 
             <div className='h-full relative'>
                 <div>
                     <div className='rounded-[10px] mb-2 w-[4px] h-[20px] bg-black relative left-[35%] animate-bounce'></div>
@@ -18,6 +20,9 @@ const LineSide = () => {
                     <div className='rounded-[10px] mb-2 w-[4px] h-[20px] bg-black relative left-[35%] animate-bounce'></div>
                 </div>
             </div>
+            :
+            ''
+        }
         </>
     )
 }
