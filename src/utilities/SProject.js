@@ -6,6 +6,7 @@ import Thesisary from '../Images/SProject/Thesisary.png';
 import TradingCrypto from '../Images/SProject/tradingCrpyto.png';
 import Augmented from '../Images/SProject/Augmented.png';
 import NCOVID from '../Images/SProject/NCOVID.jpg';
+import MindWave from '../Images/SProject/MindWave.png';
 
 export {
     DemonSlayer,
@@ -15,5 +16,6 @@ export {
     Thesisary,
     TradingCrypto,
     Augmented,
-    NCOVID
+    NCOVID,
+    MindWave
 }

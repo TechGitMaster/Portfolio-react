@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Angular, ReactJs, Javascript, Android, Github2, ScaleUp } from '../../utilities/PNG';
-import { TradingCrypto, DemonSlayer, HotelReservation, Kobayashi, Pacman, Thesisary, Augmented, NCOVID } from '../../utilities/SProject';
+import { TradingCrypto, DemonSlayer, HotelReservation, Kobayashi, Pacman, Thesisary, Augmented, NCOVID, MindWave } from '../../utilities/SProject';
 
 const Projects = ({ windowSize }) => {
     const [iconSelected, setIconSelected] = useState(0);
@@ -21,7 +21,9 @@ const Projects = ({ windowSize }) => {
             [TradingCrypto, 'Trading Crypto.Hunk', 'A SPA (single-page app) crypto trading web that you will see all the current markets and trading powered with API CoinGecko.',
             ['React', 'Redux', 'Tailwind'], [['Code', Github2, 'https://github.com/TechGitMaster/TradingCrypto.Hunk.git'], ['Live Demo', ScaleUp, 'https://tradingcryptohunk.vercel.app/']] ],
             [Thesisary, 'Thesisary Web App', 'The aim of this website is to post the best research, and showcasing all the research that the students have been made. Moreover the student can see and rate the research if they want to.',
-            ['React', 'Typescript', 'Tailwind', 'NodeJs'], [['Code', Github2, 'https://github.com/TechGitMaster/directory_client.git'], ['Live Demo', ScaleUp, 'https://thesisary.vercel.app/']] ]
+            ['React', 'Typescript', 'Tailwind', 'NodeJs'], [['Code', Github2, 'https://github.com/TechGitMaster/directory_client.git'], ['Live Demo', ScaleUp, 'https://thesisary.vercel.app/']] ],
+            [MindWave, 'MindWave', 'MindWave, an AI language model powered by OpenAI, capable of understanding and generating human-like text for a variety of tasks. The knowledge is based on information available up to September 2021, and designed to provide helpful responses while adhering to ethical guidelines.',
+            ['React', 'Typescript', 'NodeJs'], [['Live Demo', ScaleUp, 'https://mindwave.vercel.app']]]
         ],
 
         [
