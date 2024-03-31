@@ -1,9 +1,9 @@
 import React from 'react';
-import { Picture2, WaveArm, Angular,Bootstrap,CSharp,SpringBoot,Java,Mysql,Php,Unity } from '../../utilities/PNG';
+import { Picture2, WaveArm, Angular,Bootstrap,CSharp,SpringBoot,Java,Mysql,Php,Unity,ReactJs,NodeJs,MongoDb } from '../../utilities/PNG';
 
 const About = () => {
 
-    const TechStack = [Angular,Bootstrap,CSharp,SpringBoot,Java,Mysql,Php,Unity];
+    const TechStack = [Angular,CSharp,SpringBoot,Java,Unity,ReactJs,NodeJs,MongoDb];
 
     return (
         <>
@@ -19,7 +19,7 @@ const About = () => {
                         </div>
 
                         <p className='text-[#241F1F] md:text-[25px] text-[20px] font-bold mt-2 mb-3' style={{ lineHeight: '33px' }}>A Dedicated Front-End Developer with passionate and creativity </p>
-                        <p className='text-[#463737] md:text-[15px] text-[14px]' style={{ lineHeight: '25px', letterSpacing: '1px' }}>I am a junior Front-End Developer with a strong skill set including HTML, CSS, JavaScript, React, Tailwind and NodeJS. I have a knack for creating and managing responsive websites that deliver seamless user experiences. My specialty involves creating lively interfaces using clean, efficient code and leveraging modern development practices. Collaboration is important to me, I value input from teammates and am committed to enhancing and delivering web applications.</p>
+                        <p className='text-[#463737] md:text-[15px] text-[14px]' style={{ lineHeight: '25px', letterSpacing: '1px' }}>I am a junior Front-End Developer with a strong skill set including HTML, CSS, JavaScript, Typescript, Vuejs, Tailwind and Gitlab for version control. I have a knack for creating and managing responsive websites that deliver seamless user experiences. My specialty involves creating lively interfaces using clean, efficient code and leveraging modern development practices. Collaboration is important to me, I value input from teammates and am committed to enhancing and delivering web applications.</p>
                     </div>
                 </div>
 

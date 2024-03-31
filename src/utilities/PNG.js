@@ -28,6 +28,11 @@ import ScaleUp from '../Images/PNG/scaleup.png';
 import Map from '../Images/PNG/map.png';
 import Mail from '../Images/PNG/mail.png';
 import Burger from '../Images/PNG/burger.png';
+import Gitlab from '../Images/PNG/gitlab.png';
+import Sass from '../Images/PNG/sass.png';
+import Vuejs from '../Images/PNG/vuejs.png';
+import Laravel from '../Images/PNG/laravel.png';
+
 
 export {
     Github,
@@ -59,5 +64,9 @@ export {
     ScaleUp,
     Mail,
     Map,
-    Burger
+    Burger,
+    Gitlab,
+    Sass,
+    Laravel,
+    Vuejs
 }

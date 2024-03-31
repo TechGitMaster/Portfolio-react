@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
-import {Github,LinkIn,Facebook,Html,Css,Tailwind,Javascript,Typescript,ReactJs,NodeJs,MongoDb,Picture1,ArrowDown} from '../../utilities/PNG'
+import {Github,LinkIn,Facebook,Html,Css,Tailwind,Javascript,Typescript,Sass,Laravel,Gitlab,Vuejs,Picture1,ArrowDown} from '../../utilities/PNG'
 
 const FrontPage = ({ clickNavi, forExplore, setIconLink }) => {
 
-    const TechStack = [Html,Css,Tailwind,Javascript,Typescript,ReactJs,NodeJs,MongoDb];
+    const TechStack = [Html,Css,Tailwind,Javascript,Typescript,Sass,Laravel,Gitlab,Vuejs];
     const refDiv = useRef();
     const refIcon = useRef();
 
@@ -57,7 +57,7 @@ const FrontPage = ({ clickNavi, forExplore, setIconLink }) => {
                             
                             <div className='flex flex-wrap md:mt-0 mt-5'>
                             {
-                                TechStack.map((a, i) => <img src={a} alt='stack' className='h-[30px] my-2' style={{ marginRight: i+1 < TechStack.length ? '35px':'0px'  }} />)
+                                TechStack.map((a, i) => <img src={a} alt='stack' className='h-[30px] my-2 shrink-0' style={{ marginRight: i+1 < TechStack.length ? '35px':'0px'  }} />)
                             }
                             </div>
                         </div>
